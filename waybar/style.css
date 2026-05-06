@@ -1,0 +1,210 @@
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 13px;
+}
+
+window#waybar {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+
+#workspaces {
+    background: #282a36;
+    margin: 4px 8px;
+    padding: 0 5px;
+    border-radius: 10px;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+#workspaces button {
+    padding: 0 4px;
+    margin: 0 2px;
+    color: #6272a4; /* Gris para vacíos */
+    background: transparent;
+    border-radius: 8px;
+    margin: 3px 2px;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    transition: none;
+}
+
+/* 1. Quitamos el Hover y Focus por completo */
+#workspaces button:hover,
+#workspaces button:focus,
+#workspaces button:active {
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    /* Esto evita que cambie el color al pasar el mouse */
+    color: inherit; 
+}
+
+/* 2. Workspaces con aplicaciones (Blanco) */
+#workspaces button.occupied {
+    color: #f8f8f2;
+}
+
+/* 3. Workspace donde estás ahora (Violeta) */
+/* Agregamos el :hover aquí para que si pasás el mouse por el activo, siga siendo violeta */
+#workspaces button.active,
+#workspaces button.active:hover {
+    color: #bd93f9;
+    background-color: rgba(189, 147, 249, 0.15);
+    border-bottom: 2px solid #bd93f9;
+}
+
+/* 4. Estado Urgente (Rojo) */
+#workspaces button.urgent,
+#workspaces button.urgent:hover {
+    color: #ff5555;
+    background-color: rgba(255, 85, 85, 0.3);
+}
+
+/* 5. Ajuste de los iconos/números */
+#workspaces button label {
+    padding: 0 2px;
+}
+
+/* Definimos la animación de parpadeo */
+@keyframes blink {
+    to {
+        background-color: #ff5555; /* Rojo Dracula */
+        color: #f8f8f2;
+    }
+    from {
+        background-color: #282a36; /* Color de fondo normal */
+        color: #ff5555;
+    }
+}
+
+#workspaces button.urgent {
+    color: #ff5555;
+    background-color: #282a36;
+    /* Aplicamos la animación: 0.5s de duración, infinita y alterna */
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+    border-bottom: 3px solid #ff5555; /* Opcional: una línea abajo para más énfasis */
+}
+
+/* ventana activa al lado de workspaces */
+#window {
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.modules-right > widget {
+  margin: 0 12px;
+}
+
+#cpu, #memory, #pulseaudio, #battery {
+  background: #282a36;
+  color: #6272a4;
+  padding: 0 5px;
+  margin: 4px 2px;
+  border-radius:  10px;
+  min-width: 80px;
+}
+
+/* Animación suave para advertencia (Warning) */
+@keyframes pulse-yellow {
+    0% { background-color: #282a36; }
+    100% { background-color: #f1fa8c; color: #282a36; } /* Amarillo Dracula */
+}
+
+/* Animación agresiva para crítico (Critical) */
+@keyframes pulse-red {
+    0% { background-color: #282a36; }
+    100% { background-color: #ff5555; color: #f8f8f2; } /* Rojo Dracula */
+}
+
+/* Aplicar a CPU */
+#cpu.warning {
+    animation: pulse-yellow 1.5s infinite alternate;
+}
+
+#cpu.critical {
+    animation: pulse-red 0.5s infinite alternate;
+    font-weight: bold;
+}
+
+/* Aplicar a Memoria */
+#memory.warning {
+    animation: pulse-yellow 1.5s infinite alternate;
+}
+
+#memory.critical {
+    animation: pulse-red 0.5s infinite alternate;
+    font-weight: bold;
+}
+
+#network {
+  background: #282a36;
+  color: #6272a4;
+  padding: 0 5px;
+  margin: 4px 2px;
+  border-radius:  10px;
+  min-width: 200px;
+}
+
+tooltip {
+    background: #282a36; /* Fondo oscuro */
+    border: 1px solid #bd93f9; /* Borde violeta */
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: #f8f8f2; /* Texto blanco */
+    padding: 5px;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+#tray {
+  padding: 0 10px;
+}
+
+#custom-power {
+  background: #282a36;
+  color: white;
+  padding: 0 15px;
+  margin: 4px 2px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+/* reloj centrado */
+#clock {
+  background: #282a36;
+  color: #f8f8f2;
+  padding: 0 10px;
+  margin: 4px 10px;
+  border-radius: 5px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+/* separación derecha */
+.modules-right > * {
+  margin: 0 10px;
+}
+
+/*#cpu { color: #ff6b6b; }
+#memory { color: #4dabf7; }
+#pulseaudio { color: #51cf66; }
+#network { color: #fcc419; }
+#battery { color: #845ef7; }*/
+
+
+
+
+
+
+
+
+

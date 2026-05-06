@@ -1,0 +1,89 @@
+/* Ventana base transparente */
+window {
+    margin: 0px;
+    background-color: transparent;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+}
+
+/* Contenedor principal Dracula */
+#outer-box {
+    margin: 2px;
+    border: 2px solid #bd93f9;
+    background-color: #282a36;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+#inner-box {
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Caja de entrada de texto */
+#input {
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+    background-color: #44475a;
+    border-radius: 8px;
+    padding: 8px;
+    outline: none;
+}
+
+/* Ocultar scrollbars */
+#scroll {
+    margin: 0px;
+    border: none;
+    overflow: hidden;
+}
+
+scrollbar, trough, slider {
+    opacity: 0;
+    background-color: transparent;
+    border: none;
+}
+
+/* Estilo base de las entradas */
+#entry {
+    margin: 2px 0px;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+/* 
+   SELECCIONADO (Scroll/Teclado):
+   Aquí es donde vuelve el color para que veas qué elegís.
+*/
+#entry:selected {
+    background-color: #bd93f9;
+    border-radius: 8px;
+    outline: none;
+}
+
+#text:selected {
+    color: #282a36;
+    font-weight: bold;
+}
+
+/* 
+   HOVER (Mouse):
+   Mismo color para que la experiencia sea fluida.
+*/
+#entry:hover {
+    background-color: #bd93f9;
+    border-radius: 8px;
+}
+
+#entry:hover #text {
+    color: #282a36;
+    font-weight: bold;
+}
+
+#text {
+    margin: 0px 5px;
+    border: none;
+    color: #f8f8f2;
+}
