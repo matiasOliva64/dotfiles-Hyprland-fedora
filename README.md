@@ -39,9 +39,10 @@ Bienvenido a mi repositorio de configuraciones personales (**dotfiles**). Este e
 
 ## 🚀 Instalación y Recuperación
 Si acabas de formatear o querés aplicar estas configs en una instalación limpia de Fedora:
+
+1. **Instalación de paquetes necesarios**
 >[!NOTE]
 > En el archivo hyprpaper.conf cambiar ruta de tu wallpaper preferido
-1. **Instalación de paquetes necesarios**
 ```bash
 sudo dnf install xdg-desktop-portal-hyprland waybar kitty dunst wofi wlogout \
 jetbrains-mono-fonts-all google-noto-emoji-color-fonts \
