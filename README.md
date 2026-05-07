@@ -43,13 +43,13 @@ Si acabas de formatear o querés aplicar estas configs en una instalación limpi
 > En el archivo hyprpaper.conf cambiar ruta de tu wallpaper preferido
 1. **Instalación de paquetes necesarios**
 ```bash
-sudo dnf install hyprland waybar kitty dunst wofi wlogout \
+sudo dnf install xdg-desktop-portal-hyprland waybar kitty dunst wofi wlogout \
 jetbrains-mono-fonts-all google-noto-emoji-color-fonts \
 libappindicator-gtk3 xwaylandvideobridge
 ```
 2. **Clonar el repositorio**
 ```bash
-git clone [https://github.com/matiasOliva64/dotfiles.git](https://github.com/matiasOliva64/dotfiles.git) ~/dotfiles
+git clone https://github.com/matiasOliva64/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 3. **Despliegue de archivos**\
