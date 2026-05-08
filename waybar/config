@@ -17,6 +17,7 @@
     "pulseaudio",
     "cpu",
     "memory",
+    "custom/temp",
     "tray",
     "custom/power"
   ],
@@ -102,6 +103,14 @@
       "warning": 70,
       "critical": 90
     }
+  },
+
+  "custom/temp": {
+    "exec": "~/.config/waybar/scripts/temp.sh",
+    "return-type": "json",
+    "format": "{}",
+    "interval": 10,
+    "tooltip": true
   },
 
   "pulseaudio": {

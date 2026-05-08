@@ -103,7 +103,7 @@ window#waybar {
   margin: 0 12px;
 }
 
-#cpu, #memory, #pulseaudio, #battery {
+#cpu, #memory, #pulseaudio, #battery, #custom-temp {
   background: #282a36;
   color: #6272a4;
   padding: 0 5px;
@@ -111,6 +111,16 @@ window#waybar {
   border-radius:  10px;
   min-width: 80px;
 }
+
+#custom-temp.warning {
+    animation: pulse-yellow 1.5s infinite alternate;
+}
+
+#custom-temp.critical {
+    animation: pulse-red 0.5s infinite alternate;
+    font-weight: bold;
+}
+
 
 /* Animación suave para advertencia (Warning) */
 @keyframes pulse-yellow {
