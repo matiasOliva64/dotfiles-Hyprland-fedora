@@ -5,7 +5,7 @@ Bienvenido a mi repositorio de configuraciones personales (**dotfiles**). Este e
 ![Hyprland](https://img.shields.io/badge/WM-Hyprland-blue?style=for-the-badge&logo=arch-linux&logoColor=white)
 ![Fedora](https://img.shields.io/badge/Distro-Fedora-0B57A4?style=for-the-badge&logo=fedora&logoColor=white)
 ![Dracula](https://img.shields.io/badge/Theme-Dracula-BD93F9?style=for-the-badge&logo=dracula&logoColor=white)
-
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/matiasOliva64/dotfiles-Hyprland-fedora)
 ## 🖥️ Especificaciones del Sistema
 * **CPU:** AMD Ryzen 5 2400G
 * **GPU:** AMD Radeon RX 580 (8GB)
