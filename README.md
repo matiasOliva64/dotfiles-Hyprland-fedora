@@ -44,7 +44,7 @@ Si acabas de formatear o querés aplicar estas configs en una instalación limpi
 >[!NOTE]
 > En el archivo hyprpaper.conf cambiar ruta de tu wallpaper preferido
 ```bash
-sudo dnf install xdg-desktop-portal-hyprland waybar kitty dunst wofi wlogout \
+sudo dnf install xdg-desktop-portal-hyprland waybar kitty dunst wofi wlogout grim swappy\
 jetbrains-mono-fonts-all google-noto-emoji-color-fonts \
 libappindicator-gtk3 xwaylandvideobridge
 ```
@@ -81,3 +81,10 @@ cp -r ~/dotfiles/{hypr,waybar,kitty,dunst,wofi,wlogout} ~/.config/
 - Monitor: Configurado a 144Hz en hyprland.conf usando la línea:
 - monitor = DP-1, 1920x1080@144, 0x0, 1
 
+>[!TIP]
+> Para capturas de pantalla completa o seleccionando una region, se usan los paquetes grim y swappy. Dejo a continuación ejemplos de comandos para crear la carpeta donde se guardará las capturas de pantalla (pueden optar por definir su propia carpeta y ubicación).
+
+```bash
+mkdir -p ~/Imágenes/Screenshots
+mkdir -p ~/Pictures/Screenshots
+```
